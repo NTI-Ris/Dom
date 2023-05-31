@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dom.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="left">
+    <p id="Vibes" style="display: none;">HIHIHIHIHI</p>
+    <p id="time"></p>
+    <img id="image" src="bird.jpg" alt="bird">
+    </div>
+    <br>
+
+    <div class = "block">
+        <button onclick="Button1()" class = "knapp">Change Bg </button>
+        <button onclick="Button2()" class = "knapp">Change picture</button>
+        <button onclick="Button3()" class = "knapp">Header</button>
+        <button onclick="Button4()" class = "knapp">Good vibes</button>
+        <button onclick="Button5()" class = "knapp">Hide picture</button>
+        <button onclick="Button6()" class = "knapp">Remove header</button>
+        <button onclick="Button7()" class = "knapp">Time</button>
+        <button onclick="Button8()" class = "knapp">Show picture</button>
+        <button onclick="Button9()" class = "knapp">Show header</button>
+
+    </div>
+
+    <script>
+        function Button1() {
+            document.body.style.backgroundColor = "olive";
+        }
+        
+        function Button2() {
+            document.getElementById("image").src = "cat.jpg";
+        }
+
+        function Button3() {
+            document.getElementById("left").id = "mid"
+            document.getElementById("image").style.border = "5px solid moccasin"
+            document.getElementById("Vibes").style.fontSize = "2vw"
+            document.getElementById("time").style.fontSize = "1vw"
+            }
+        
+
+        function Button4() {
+            document.getElementById("Vibes").style.display = "block";
+        }
+
+        function Button5() {5
+            document.getElementById("image").style.display = "none";
+        }
+
+        function Button6() {
+            document.getElementById("image").style.display = "none";
+            document.getElementById("Vibes").style.display = "none";
+            document.getElementById("time").style.display = "none";
+        }
+
+        function Button7() {
+            document.getElementById("time").innerHTML = Date();
+        }
+        function Button8() {
+            document.getElementById("image").style.display = "block";
+        }
+
+        function Button9() {
+            document.getElementById("image").style.display = "block";
+            document.getElementById("Vibes").style.display = "block";
+            document.getElementById("time").style.display = "block";
+
+        }
+    </script>
+
+</body>
+</html>
