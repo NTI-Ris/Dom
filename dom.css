@@ -1,3 +1,4 @@
+<!--centrerar alla element innanför body-->
 body {
     background-color: royalblue;
     display: flex;
@@ -8,7 +9,7 @@ body {
     flex-direction: column;
     padding-top: 1%;
   }
-  
+  <!--div element med knappar i där det är 30% distans mellan dem-->
   .block {
     background-color: rgb(190, 190, 190);
     width: 60%;
@@ -23,7 +24,7 @@ body {
     grid-gap: 1%;
 
   }
-  
+  <!--Knapp css-->
   .knapp {
     height: 10vh;
     width: 50%;
@@ -36,7 +37,7 @@ body {
     font-size: 1vw;
     margin: auto;
   }
-  
+  <!--Finns inte så mycket att förklara-->
   .knapp:hover {
     background-color: red;
   }
