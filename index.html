@@ -8,14 +8,14 @@
     <title>Document</title>
 </head>
 <body>
-
+<!--Element uppe åt vänster-->
     <div id="left">
     <p id="Vibes" style="display: none;">HIHIHIHIHI</p>
     <p id="time"></p>
     <img id="image" src="bird.jpg" alt="bird">
     </div>
     <br>
-
+    <!--Ett antal knappar innanför ett div element-->
     <div class = "block">
         <button onclick="Button1()" class = "knapp">Change Bg </button>
         <button onclick="Button2()" class = "knapp">Change picture</button>
@@ -29,16 +29,20 @@
 
     </div>
 
+    <!--Knapparnas funktioner-->
     <script>
+        <!--Byter färg-->
         function Button1() {
             document.body.style.backgroundColor = "olive";
         }
         
         function Button2() {
+            <!--Byter bold soruce-->
             document.getElementById("image").src = "cat.jpg";
         }
 
         function Button3() {
+            <!--Byter left left id till mid som sätter elementen till mitten-->
             document.getElementById("left").id = "mid"
             document.getElementById("image").style.border = "5px solid moccasin"
             document.getElementById("Vibes").style.fontSize = "2vw"
@@ -47,27 +51,33 @@
         
 
         function Button4() {
+            <!--Tar fram texten-->
             document.getElementById("Vibes").style.display = "block";
         }
 
         function Button5() {5
+            <!--Gömmer bilden-->
             document.getElementById("image").style.display = "none";
         }
 
         function Button6() {
+            <!--Gömmer bilden, texten och tiden-->
             document.getElementById("image").style.display = "none";
             document.getElementById("Vibes").style.display = "none";
             document.getElementById("time").style.display = "none";
         }
 
         function Button7() {
+            <!--Tar fram tiden-->
             document.getElementById("time").innerHTML = Date();
         }
         function Button8() {
+            <!--Tar fram bilden-->
             document.getElementById("image").style.display = "block";
         }
 
         function Button9() {
+            <!--Tar fram bilden, texten och tiden-->
             document.getElementById("image").style.display = "block";
             document.getElementById("Vibes").style.display = "block";
             document.getElementById("time").style.display = "block";
